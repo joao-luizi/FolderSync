@@ -1,24 +1,16 @@
-﻿using FolderSync.AppStates;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
-
-namespace FolderSync
+﻿namespace FolderSync
 {
     public class ProgramArgs
     {
         private DateTime ScheduledSyncTime;
-       
+
 
         public string sourceFolder;
         public string destinationFolder;
         public int checkInterval;
         public string logFilePath;
 
-       
+
 
         public ProgramArgs(string[] args)
         {
@@ -27,7 +19,7 @@ namespace FolderSync
                 throw new ArgumentException("Insuficient parameters provided.");
             }
 
-            
+
             sourceFolder = args[0];
 
             if (!Directory.Exists(sourceFolder))
@@ -55,7 +47,7 @@ namespace FolderSync
                 throw new ArgumentException($"Invalid log file:{logFilePath}");
             }
 
-            
+
         }
         public void ResetSyncTime()
         {

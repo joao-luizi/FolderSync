@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
-
-namespace FolderSync.AppStates
+﻿namespace FolderSync.AppStates
 {
     public class WaitingState : AppState
     {
@@ -20,10 +13,10 @@ namespace FolderSync.AppStates
             if (SetUp == false)
             {
                 Console.Clear();
-                Console.WriteLine($"Source Folder: {programConfig.sourceFolder}");             
-                Console.WriteLine($"Destination Folder: {programConfig.destinationFolder}");          
-                Console.WriteLine($"LogFile: {programConfig.logFilePath}");            
-                Console.WriteLine($"Next synchronize: {programConfig.TimeToSync:mm\\:ss}");             
+                Console.WriteLine($"Source Folder: {programConfig.sourceFolder}");
+                Console.WriteLine($"Destination Folder: {programConfig.destinationFolder}");
+                Console.WriteLine($"LogFile: {programConfig.logFilePath}");
+                Console.WriteLine($"Next synchronize: {programConfig.TimeToSync:mm\\:ss}");
                 Console.WriteLine("Press 'q' to terminate the application");
                 SetUp = true;
             }
@@ -35,13 +28,13 @@ namespace FolderSync.AppStates
                 Console.Write($"Next synchronize: {programConfig.TimeToSync:mm\\:ss}");
                 Console.SetCursorPosition(x, y);
             }
-            
+
         }
 
         public override AppState? Process()
         {
             //User presses quit or it's time to start another sync task
-            AppState? result = this;         
+            AppState? result = this;
             if (Console.KeyAvailable)
             {
                 var read = Console.ReadKey(true);
@@ -57,6 +50,6 @@ namespace FolderSync.AppStates
             return result;
         }
 
-        
+
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace FolderSync.AppStates
 {
@@ -71,7 +65,7 @@ namespace FolderSync.AppStates
         private void ProcessDirsInSource(IEnumerable<string> sourceDirsPath, IEnumerable<string> destDirsPath)
         {
             //Dirs in Source and not found in Destination - Create Path even devoid of files for 100% sync
-            var exceptDirsInSource = sourceDirsPath.Except(destDirsPath); 
+            var exceptDirsInSource = sourceDirsPath.Except(destDirsPath);
             LogMessage($"Found {exceptDirsInSource.Count()} folders missing in destination");
             foreach (string s in exceptDirsInSource)
             {
@@ -93,7 +87,7 @@ namespace FolderSync.AppStates
         private void ProcessDirsInDest(IEnumerable<string> sourceDirsPath, IEnumerable<string> destDirsPath)
         {
             //Dirs in Dest and not in Source - Delete recursively
-            var exceptDirsOut = destDirsPath.Except(sourceDirsPath); 
+            var exceptDirsOut = destDirsPath.Except(sourceDirsPath);
             LogMessage($"Found {exceptDirsOut.Count()} folders in destination not found in source.");
             foreach (string s in exceptDirsOut)
             {
@@ -101,7 +95,7 @@ namespace FolderSync.AppStates
                 string message = "";
                 try
                 {
-                    Directory.Delete(destinationDir,true);
+                    Directory.Delete(destinationDir, true);
                     message += $"Folder: {destinationDir} deleted successfully";
                 }
                 catch (Exception ex)
@@ -115,7 +109,7 @@ namespace FolderSync.AppStates
         private void ProcessFilesInSourceNotInDest(IEnumerable<string> sourcefilesPath, IEnumerable<string> destfilesPath, FileCompare fileCompare)
         {
             //Files in Source and not in Destination - Do Copy & CheckSum
-            var exceptInSource = sourcefilesPath.Except(destfilesPath); 
+            var exceptInSource = sourcefilesPath.Except(destfilesPath);
             LogMessage($"Found {exceptInSource.Count()} files in Source not found in Destination.");
             foreach (string s in exceptInSource)
             {
@@ -170,7 +164,7 @@ namespace FolderSync.AppStates
                 LogMessage(message);
             }
         }
-        
+
         private void ProcessFilesInDestNotInSource(IEnumerable<string> sourcefilesPath, IEnumerable<string> destfilesPath)
         {
             //Files in Dest and not in Source - Delete
@@ -193,8 +187,8 @@ namespace FolderSync.AppStates
 
             }
         }
-             
-        
+
+
 
         private void LogMessage(string message)
         {
@@ -204,11 +198,11 @@ namespace FolderSync.AppStates
 
         private void DumpLog()
         {
-            try 
+            try
             {
                 System.IO.File.WriteAllText(programConfig.logFilePath, LogMessages.ToString());
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine($"Error ocurred while writing logfile ({programConfig.logFilePath}): {ex.Message}");
             }

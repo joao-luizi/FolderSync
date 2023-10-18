@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace FolderSync
 {
@@ -11,7 +7,7 @@ namespace FolderSync
     {
         public bool Equals(FileInfo? x, FileInfo? y)
         {
-           
+
             if (object.ReferenceEquals(x, y))
             {
                 return true;
@@ -27,7 +23,7 @@ namespace FolderSync
             {
                 return true;
             }
-         
+
             // At last, compare the MD5 of the files.
             var hashX = GetHash(x.FullName);
             var hashY = GetHash(y.FullName);
