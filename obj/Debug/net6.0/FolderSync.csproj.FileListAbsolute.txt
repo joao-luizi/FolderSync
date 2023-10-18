@@ -1,0 +1,15 @@
+E:\VSRepos\JobTasks\FolderSync\bin\Debug\net6.0\FolderSync.exe
+E:\VSRepos\JobTasks\FolderSync\bin\Debug\net6.0\FolderSync.deps.json
+E:\VSRepos\JobTasks\FolderSync\bin\Debug\net6.0\FolderSync.runtimeconfig.json
+E:\VSRepos\JobTasks\FolderSync\bin\Debug\net6.0\FolderSync.dll
+E:\VSRepos\JobTasks\FolderSync\bin\Debug\net6.0\FolderSync.pdb
+E:\VSRepos\JobTasks\FolderSync\obj\Debug\net6.0\FolderSync.csproj.AssemblyReference.cache
+E:\VSRepos\JobTasks\FolderSync\obj\Debug\net6.0\FolderSync.GeneratedMSBuildEditorConfig.editorconfig
+E:\VSRepos\JobTasks\FolderSync\obj\Debug\net6.0\FolderSync.AssemblyInfoInputs.cache
+E:\VSRepos\JobTasks\FolderSync\obj\Debug\net6.0\FolderSync.AssemblyInfo.cs
+E:\VSRepos\JobTasks\FolderSync\obj\Debug\net6.0\FolderSync.csproj.CoreCompileInputs.cache
+E:\VSRepos\JobTasks\FolderSync\obj\Debug\net6.0\FolderSync.dll
+E:\VSRepos\JobTasks\FolderSync\obj\Debug\net6.0\refint\FolderSync.dll
+E:\VSRepos\JobTasks\FolderSync\obj\Debug\net6.0\FolderSync.pdb
+E:\VSRepos\JobTasks\FolderSync\obj\Debug\net6.0\FolderSync.genruntimeconfig.cache
+E:\VSRepos\JobTasks\FolderSync\obj\Debug\net6.0\ref\FolderSync.dll

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "BlO+Sf2Wu1ziKCeBq7+a+46T7g4MF9Qw5E9DnNDhxjMgEpkSOm15VwpvIeWCvUoU9yMOtq1JX7WtYGF+Kc3d1Q==",
+  "success": true,
+  "projectFilePath": "E:\\VSRepos\\JobTasks\\FolderSync\\FolderSync.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joaol\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\joaol\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\joaol\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\joaol\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.21\\microsoft.netcore.app.host.win-x64.6.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}

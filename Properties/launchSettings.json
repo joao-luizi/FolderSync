@@ -1,0 +1,21 @@
+{
+  "profiles": {
+    "FolderSync": {
+      "commandName": "Project",
+      "commandLineArgs": "E:\\VeemConfig\\source E:\\VeemConfig\\destination 10 E:\\VeemConfig\\logfile.txt"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "Profile 1": {
+      "commandName": "Project",
+      "commandLineArgs": "E:\\Games\\Tame.It-DARKZER0 E:\\VeemConfig\\destination 10 E:\\VeemConfig\\logfile.txt"
+    },
+    "Profile 2": {
+      "commandName": "Executable",
+      "executablePath": "E:\\VSRepos\\JobTasks\\FolderSync\\bin\\Debug\\net6.0\\FolderSync.exe",
+      "commandLineArgs": "E:\\VeemConfig\\source E:\\VeemConfig\\destination 10 E:\\VeemConfig\\logfile.txt"
+    }
+  }
+}
